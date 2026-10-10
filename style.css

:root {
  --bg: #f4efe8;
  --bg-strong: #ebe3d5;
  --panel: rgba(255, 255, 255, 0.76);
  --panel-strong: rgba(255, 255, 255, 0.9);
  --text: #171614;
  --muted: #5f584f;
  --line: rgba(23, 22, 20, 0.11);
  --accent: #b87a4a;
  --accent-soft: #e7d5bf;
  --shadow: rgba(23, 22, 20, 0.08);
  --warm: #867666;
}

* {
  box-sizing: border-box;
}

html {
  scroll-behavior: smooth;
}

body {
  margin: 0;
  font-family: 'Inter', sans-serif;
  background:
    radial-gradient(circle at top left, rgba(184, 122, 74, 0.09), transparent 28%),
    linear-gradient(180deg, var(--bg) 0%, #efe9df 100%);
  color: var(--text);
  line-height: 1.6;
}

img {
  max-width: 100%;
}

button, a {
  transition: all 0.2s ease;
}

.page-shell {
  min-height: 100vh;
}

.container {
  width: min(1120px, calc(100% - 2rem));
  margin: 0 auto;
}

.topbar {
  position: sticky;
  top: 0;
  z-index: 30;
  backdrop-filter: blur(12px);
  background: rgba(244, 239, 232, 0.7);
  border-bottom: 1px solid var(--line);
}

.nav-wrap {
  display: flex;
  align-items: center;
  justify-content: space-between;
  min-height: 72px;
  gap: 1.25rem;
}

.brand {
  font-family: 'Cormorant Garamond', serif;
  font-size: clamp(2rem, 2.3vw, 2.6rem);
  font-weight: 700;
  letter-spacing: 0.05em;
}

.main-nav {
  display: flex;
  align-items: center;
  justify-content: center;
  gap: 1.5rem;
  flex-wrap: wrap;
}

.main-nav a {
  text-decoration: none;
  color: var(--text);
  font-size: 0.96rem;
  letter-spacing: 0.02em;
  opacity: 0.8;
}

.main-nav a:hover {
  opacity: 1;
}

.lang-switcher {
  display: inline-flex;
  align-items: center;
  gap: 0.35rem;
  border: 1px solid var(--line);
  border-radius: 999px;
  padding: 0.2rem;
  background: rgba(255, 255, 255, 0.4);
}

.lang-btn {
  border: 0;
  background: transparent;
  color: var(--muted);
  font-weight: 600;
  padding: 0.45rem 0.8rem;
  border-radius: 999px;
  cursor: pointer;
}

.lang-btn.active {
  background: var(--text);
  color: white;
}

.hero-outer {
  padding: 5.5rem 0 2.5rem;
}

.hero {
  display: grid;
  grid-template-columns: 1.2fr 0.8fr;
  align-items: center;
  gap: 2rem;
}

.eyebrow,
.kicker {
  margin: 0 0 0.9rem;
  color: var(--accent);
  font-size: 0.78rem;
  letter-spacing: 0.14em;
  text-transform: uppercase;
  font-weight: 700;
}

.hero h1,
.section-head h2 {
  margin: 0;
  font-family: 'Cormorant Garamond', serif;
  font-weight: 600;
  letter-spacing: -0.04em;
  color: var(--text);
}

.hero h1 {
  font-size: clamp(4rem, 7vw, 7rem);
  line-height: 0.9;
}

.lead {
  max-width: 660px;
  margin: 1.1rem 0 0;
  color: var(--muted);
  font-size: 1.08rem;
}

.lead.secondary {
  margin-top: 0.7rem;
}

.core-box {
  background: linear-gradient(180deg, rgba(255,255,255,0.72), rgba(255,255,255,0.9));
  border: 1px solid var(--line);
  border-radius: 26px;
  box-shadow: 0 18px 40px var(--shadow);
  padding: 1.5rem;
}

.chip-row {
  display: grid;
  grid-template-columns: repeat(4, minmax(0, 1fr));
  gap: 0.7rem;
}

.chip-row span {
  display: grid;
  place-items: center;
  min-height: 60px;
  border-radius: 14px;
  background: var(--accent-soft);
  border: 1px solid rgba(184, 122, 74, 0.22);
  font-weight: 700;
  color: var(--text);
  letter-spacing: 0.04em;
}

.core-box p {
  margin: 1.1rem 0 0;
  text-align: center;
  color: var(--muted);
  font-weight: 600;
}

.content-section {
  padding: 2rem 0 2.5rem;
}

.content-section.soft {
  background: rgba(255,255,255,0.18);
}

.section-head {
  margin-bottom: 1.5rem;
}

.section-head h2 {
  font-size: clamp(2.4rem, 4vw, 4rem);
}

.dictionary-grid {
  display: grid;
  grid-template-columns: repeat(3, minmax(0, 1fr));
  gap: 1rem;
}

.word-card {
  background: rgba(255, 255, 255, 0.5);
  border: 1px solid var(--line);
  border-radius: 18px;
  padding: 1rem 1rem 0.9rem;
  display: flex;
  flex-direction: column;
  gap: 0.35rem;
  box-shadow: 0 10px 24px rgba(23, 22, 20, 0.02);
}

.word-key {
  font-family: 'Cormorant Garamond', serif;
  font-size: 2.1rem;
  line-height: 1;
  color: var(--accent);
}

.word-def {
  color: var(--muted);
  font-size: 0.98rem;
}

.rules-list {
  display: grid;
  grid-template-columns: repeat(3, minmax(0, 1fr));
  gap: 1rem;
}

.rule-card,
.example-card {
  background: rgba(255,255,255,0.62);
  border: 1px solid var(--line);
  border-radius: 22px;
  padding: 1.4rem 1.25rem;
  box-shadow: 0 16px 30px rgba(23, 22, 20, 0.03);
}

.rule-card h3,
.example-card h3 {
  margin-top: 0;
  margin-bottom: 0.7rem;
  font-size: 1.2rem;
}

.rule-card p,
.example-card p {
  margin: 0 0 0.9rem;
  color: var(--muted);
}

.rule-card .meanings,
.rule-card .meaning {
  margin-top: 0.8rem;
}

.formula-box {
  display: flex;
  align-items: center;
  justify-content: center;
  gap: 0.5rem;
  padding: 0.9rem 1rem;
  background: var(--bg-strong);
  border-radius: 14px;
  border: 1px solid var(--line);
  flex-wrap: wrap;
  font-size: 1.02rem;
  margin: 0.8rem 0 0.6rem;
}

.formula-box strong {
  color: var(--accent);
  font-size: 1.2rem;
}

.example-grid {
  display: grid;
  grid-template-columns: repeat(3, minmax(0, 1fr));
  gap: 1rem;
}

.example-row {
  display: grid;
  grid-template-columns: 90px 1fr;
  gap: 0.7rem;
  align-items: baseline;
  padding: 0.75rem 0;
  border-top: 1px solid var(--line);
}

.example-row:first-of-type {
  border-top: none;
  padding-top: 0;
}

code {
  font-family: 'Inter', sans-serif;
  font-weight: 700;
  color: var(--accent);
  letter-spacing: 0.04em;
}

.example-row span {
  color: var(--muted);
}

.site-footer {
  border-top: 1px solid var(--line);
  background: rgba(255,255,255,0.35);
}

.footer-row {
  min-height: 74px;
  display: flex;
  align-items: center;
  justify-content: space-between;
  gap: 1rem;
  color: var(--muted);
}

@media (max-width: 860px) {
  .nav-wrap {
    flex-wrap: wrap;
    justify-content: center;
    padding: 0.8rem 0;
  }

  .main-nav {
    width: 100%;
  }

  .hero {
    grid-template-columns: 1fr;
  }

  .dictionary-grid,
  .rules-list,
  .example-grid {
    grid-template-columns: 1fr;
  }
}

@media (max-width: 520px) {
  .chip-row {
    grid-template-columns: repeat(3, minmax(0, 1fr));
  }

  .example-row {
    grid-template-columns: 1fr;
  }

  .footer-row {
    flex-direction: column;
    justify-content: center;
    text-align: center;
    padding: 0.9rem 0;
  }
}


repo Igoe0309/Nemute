@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nemute — najmniejszy język na świecie, oparty na 13 podstawowych słowach." />
+    <title>Nemute</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="container nav-wrap">
+          <div class="brand">Nemute</div>
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="#wprowadzenie">Wprowadzenie</a>
+            <a href="#slownik">Słownik</a>
+            <a href="#reguly">Reguły</a>
+            <a href="#przyklady">Przykłady</a>
+          </nav>
+          <div class="lang-switcher" aria-label="Language switcher">
+            <button class="lang-btn active" data-lang="pl" type="button">PL</button>
+            <button class="lang-btn" data-lang="en" type="button">EN</button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="wprowadzenie" class="hero-outer">
+          <div class="container hero">
+            <div class="hero-copy">
+              <p class="eyebrow" data-i18n="eyebrow">Język minimalny. Myśl rozległa.</p>
+              <h1>Nemute</h1>
+              <p class="lead" data-i18n="lead1">
+                Najmniejszy język na świecie, zbudowany z 13 podstawowych słów. Każde z nich
+                niesie logiczne znaczenie, a ich połączenia tworzą pełen system komunikacji.
+              </p>
+              <p class="lead secondary" data-i18n="lead2">
+                To język, w którym redukcja nie znaczy ubóstwo — wręcz odwrotnie. Im mniej
+                zasad, tym wyraźniej widać strukturę myśli.
+              </p>
+            </div>
+
+            <aside class="core-box" aria-label="13 słów Nemute">
+              <div class="chip-row">
+                <span>co</span>
+                <span>do</span>
+                <span>wi</span>
+                <span>me</span>
+                <span>te</span>
+                <span>bo</span>
+                <span>ke</span>
+                <span>mu</span>
+                <span>pe</span>
+                <span>ne</span>
+                <span>to</span>
+                <span>si</span>
+                <span>mi</span>
+              </div>
+              <p data-i18n="coreLabel">13 podstawowych słów</p>
+            </aside>
+          </div>
+        </section>
+
+        <section id="slownik" class="content-section">
+          <div class="container">
+            <div class="section-head">
+              <p class="kicker" data-i18n="dictKicker">Słownik</p>
+              <h2 data-i18n="dictTitle">Fundament języka</h2>
+            </div>
+
+            <div class="dictionary-grid">
+              <article class="word-card">
+                <span class="word-key">co</span>
+                <span class="word-def" data-i18n="co">rzecz, coś</span>
+              </article>
+              <article class="word-card">
+                <span class="word-key">do</span>
+                <span class="word-def" data-i18n="do">robić, działanie, zdarzenie</span>
+              </article>
+              <article class="word-card">
+                <span class="word-key">wi</span>
+                <span class="word-def" data-i18n="wi">chcieć, pragnienie, wola</span>
+              </article>
+              <article class="word-card">
+                <span class="word-key">me</span>
+                <span class="word-def" data-i18n="me">umysł, świadomość, myśl</span>
+              </article>
+              <article class="word-card">
+                <span class="word-key">te</span>
+                <span class="word-def" data-i18n="te">znak, słowo, treść</span>
+              </article>
+              <article class="word-card">
+                <span class="word-key">bo</span>
+                <span class="word-def" data-i18n="bo">dobro, wartość, pozytyw</span>
+              </article>
+              <article class="word-card">
+                <span class="word-key">ke</span>
+                <span class="word-def" data-i18n="ke">pytanie, niewiadoma</span>
+              </article>
+              <article class="word-card">
+                <span class="word-key">mu</span>
+                <span class="word-def" data-i18n="mu">dużo, bardzo, duży</span>
+              </article>
+              <article class="word-card">
+                <span class="word-key">pe</span>
+                <span class="word-def" data-i18n="pe">w, wewnątrz, zawieranie się</span>
+              </article>
+              <article class="word-card">
+                <span class="word-key">ne</span>
+                <span class="word-def" data-i18n="ne">nie, negacja, brak</span>
+              </article>
+              <article class="word-card">
+                <span class="word-key">to</span>
+                <span class="word-def" data-i18n="to">do, kierunek, cel</span>
+              </article>
+              <article class="word-card">
+                <span class="word-key">si</span>
+                <span class="word-def" data-i18n="si">ten sam, taki sam, prawda</span>
+              </article>
+              <article class="word-card">
+                <span class="word-key">mi</span>
+                <span class="word-def" data-i18n="mi">tu, ja, bliskość, mówiący</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="reguly" class="content-section soft">
+          <div class="container">
+            <div class="section-head">
+              <p class="kicker" data-i18n="rulesKicker">Reguły</p>
+              <h2 data-i18n="rulesTitle">Jak powstają sensy</h2>
+            </div>
+
+            <div class="rules-list">
+              <article class="rule-card">
+                <h3 data-i18n="rule1Title">1. Łączenie słów</h3>
+                <p data-i18n="rule1Text">
+                  Gdy kilka słów tworzy jedną spójną całość, zapisuje się je razem bez przerw.
+                </p>
+                <div class="formula-box">
+                  <span>mu</span>
+                  <span>+</span>
+                  <span>co</span>
+                  <span>+</span>
+                  <span>me</span>
+                  <span>=</span>
+                  <strong>mucome</strong>
+                </div>
+                <p class="meaning" data-i18n="rule1Meaning">
+                  <em>dużo rozumnych rzeczy</em> = ludzie = ludzkość
+                </p>
+              </article>
+
+              <article class="rule-card">
+                <h3 data-i18n="rule2Title">2. Zaprzeczenie</h3>
+                <p data-i18n="rule2Text">
+                  Negacja <strong>ne</strong> jest zawsze przyczepiona do słowa, które zaprzecza.
+                </p>
+                <div class="formula-box">
+                  <span>ne</span>
+                  <span>+</span>
+                  <span>mu</span>
+                  <span>=</span>
+                  <strong>nemu</strong>
+                </div>
+                <p class="meaning" data-i18n="rule2Meaning">
+                  <em>nie dużo</em> = mało
+                </p>
+              </article>
+
+              <article class="rule-card">
+                <h3 data-i18n="rule3Title">3. Liczby</h3>
+                <p data-i18n="rule3Text">
+                  Liczby zapisuje się w systemie binarnym: <strong>ne = 0</strong>, <strong>si = 1</strong>.
+                </p>
+                <p class="meaning" data-i18n="rule3Meaning">
+                  To pozwala rozbijać liczbę na prosty ciąg symboli logicznych.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="przyklady" class="content-section">
+          <div class="container">
+            <div class="section-head">
+              <p class="kicker" data-i18n="examplesKicker">Przykłady</p>
+              <h2 data-i18n="examplesTitle">Wyrazy i pojęcia złożone</h2>
+            </div>
+
+            <div class="example-grid">
+              <article class="example-card">
+                <h3 data-i18n="ex1Title">Eksploracja i poznanie</h3>
+                <div class="example-row"><code>keco</code><span data-i18n="ex1a">jaki byt? / czym jest rzecz?</span></div>
+                <div class="example-row"><code>mute</code><span data-i18n="ex1b">wielka komunikacja / oświecenie</span></div>
+              </article>
+
+              <article class="example-card">
+                <h3 data-i18n="ex2Title">Wartość i etyka</h3>
+                <div class="example-row"><code>bome</code><span data-i18n="ex2a">dobra świadomość / etyka</span></div>
+                <div class="example-row"><code>nebo</code><span data-i18n="ex2b">brak dobra / zło</span></div>
+              </article>
+
+              <article class="example-card">
+                <h3 data-i18n="ex3Title">Działanie i cel</h3>
+                <div class="example-row"><code>domi</code><span data-i18n="ex3a">działanie wobec mnie / zbliżanie się</span></div>
+                <div class="example-row"><code>tobe</code><span data-i18n="ex3b">dążenie do dobra / cel moralny</span></div>
+              </article>
+
+              <article class="example-card">
+                <h3 data-i18n="ex4Title">Relacja i istnienie</h3>
+                <div class="example-row"><code>pemi</code><span data-i18n="ex4a">zawieranie się we mnie / bliskość</span></div>
+                <div class="example-row"><code>cotet</code><span data-i18n="ex4b">rzecz wypowiedziana / symboliczny byt</span></div>
+              </article>
+
+              <article class="example-card">
+                <h3 data-i18n="ex5Title">Ilość i brak</h3>
+                <div class="example-row"><code>mubo</code><span data-i18n="ex5a">wiele dobra / obfitość wartości</span></div>
+                <div class="example-row"><code>nemete</code><span data-i18n="ex5b">brak słów / milczenie</span></div>
+              </article>
+
+              <article class="example-card">
+                <h3 data-i18n="ex6Title">Wola i cel</h3>
+                <div class="example-row"><code>wimu</code><span data-i18n="ex6a">silne pragnienie / ambicja</span></div>
+                <div class="example-row"><code>witobo</code><span data-i18n="ex6b">chcieć dobra / moralne zamiary</span></div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-row">
+          <span>Nemute</span>
+          <span data-i18n="footer">Stworzony przez Igoe0309</span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
