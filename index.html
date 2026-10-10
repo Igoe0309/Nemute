@@ -11,188 +11,261 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Crimson+Text:ital@0;1&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="background-glow glow-one"></div>
-    <div class="background-glow glow-two"></div>
-
-    <header class="site-header">
-      <nav class="nav container">
-        <div class="brand">Nemute</div>
-        <div class="nav-links">
-          <a href="#wprowadzenie">Wprowadzenie</a>
-          <a href="#slownik">Słownik</a>
-          <a href="#zasady-jezyka">Zasady języka</a>
-          <a href="#przyklady-zdan">Przykłady zdań</a>
-        </div>
-      </nav>
+    <header class="navbar">
+      <div class="container">
+        <div class="navbar-brand">Nemute</div>
+        <nav class="navbar-menu">
+          <a href="#wprowadzenie" class="navbar-link">Wprowadzenie</a>
+          <a href="#slownik" class="navbar-link">Słownik</a>
+          <a href="#reguly" class="navbar-link">Reguły</a>
+          <a href="#przyklady" class="navbar-link">Przykłady</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section id="wprowadzenie" class="hero container">
-        <div class="hero-copy">
-          <span class="eyebrow">Minimalny język. Maksymalna ekspresja.</span>
-          <h1>Nemute</h1>
-          <p class="lead">
-            Najmniejszy język na świecie oparty na 13 fundamentalnych słowach,
-            które razem tworzą pełną komunikację i łatwą strukturę myślenia.
-          </p>
-          <div class="cta-row">
-            <a class="button primary" href="#slownik">Zobacz słownik</a>
-            <a class="button secondary" href="#zasady-jezyka">Zasady języka</a>
-          </div>
-        </div>
-
-        <div class="hero-card">
-          <div class="badge">13 słów</div>
-          <div class="mini-grid">
-            <span>co</span>
-            <span>do</span>
-            <span>wi</span>
-            <span>me</span>
-            <span>te</span>
-            <span>bo</span>
-            <span>ke</span>
-            <span>mu</span>
-            <span>pe</span>
-            <span>ne</span>
-            <span>to</span>
-            <span>si</span>
-            <span>mi</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="slownik" class="container section-block">
-        <div class="section-header">
-          <p class="kicker">Słownik</p>
-          <h2>13 podstawowych słów Nemute</h2>
-        </div>
-
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Słowo</th>
-                <th>Znaczenie</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td><strong>co</strong></td><td>rzecz, coś</td></tr>
-              <tr><td><strong>do</strong></td><td>robić, zdarzenie, akcja</td></tr>
-              <tr><td><strong>wi</strong></td><td>chcieć, pragnienie, wola</td></tr>
-              <tr><td><strong>me</strong></td><td>umysł, świadomość czegoś</td></tr>
-              <tr><td><strong>te</strong></td><td>znak, słowo, treść, komunikacja</td></tr>
-              <tr><td><strong>bo</strong></td><td>dobro, wartość, pozytyw</td></tr>
-              <tr><td><strong>ke</strong></td><td>pytanie, niewiadoma, nieznane</td></tr>
-              <tr><td><strong>mu</strong></td><td>dużo, bardzo, duży, ilość</td></tr>
-              <tr><td><strong>pe</strong></td><td>w, wewnątrz, zawieranie się, przestrzeń</td></tr>
-              <tr><td><strong>ne</strong></td><td>nie, negacja, brak</td></tr>
-              <tr><td><strong>to</strong></td><td>do, kierunek A→B, cel, ruch</td></tr>
-              <tr><td><strong>si</strong></td><td>ten sam, taki sam, tak, prawda</td></tr>
-              <tr><td><strong>mi</strong></td><td>tu, ja, bliskie mówiącemu</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section id="zasady-jezyka" class="container section-block">
-        <div class="section-header">
-          <p class="kicker">Zasady języka</p>
-          <h2>Reguły ortograficzne i składniowe</h2>
-        </div>
-
-        <div class="rules-container">
-          <div class="rule-box">
-            <h3>1. Zasada łączenia słów</h3>
-            <p>
-              Jeśli kilka słów tworzy spójną całość, łączy się je w jedno słowo.
-              Przykłady: <strong>mu + co + me = mucome</strong>.
+      <section id="wprowadzenie" class="section-intro">
+        <div class="container">
+          <div class="intro-content">
+            <h1>Nemute</h1>
+            <p class="intro-subtitle">Najmniejszy język na świecie</p>
+            <p class="intro-text">
+              Nemute to język zbudowany z zaledwie 13 fundamentalnych słów. Każde słowo 
+              przenosi głębokie znaczenie, a poprzez ich połączenie powstaje kompletny 
+              system komunikacji zdolny wyrażać złożone koncepcje.
             </p>
-            <p>
-              <strong>mucome</strong> można rozumieć jako <em>dużo rozumnych rzeczy</em>, czyli ludzi,
-              a nawet <em>ludzkość</em>.
+            <p class="intro-text">
+              To nie jest abstrakcja — to pracujący system języka, gdzie każda reguła 
+              ma logiczny sens, a każde słowo ma swoje miejsce.
             </p>
           </div>
-
-          <div class="rule-box">
-            <h3>2. Zasada negacji</h3>
-            <p>
-              Zaprzeczenie <strong>ne</strong> zawsze łączy się z tym słowem, które ma zostać zaprzeczone.
-            </p>
-            <p>
-              Przykład: <strong>ne + mu = nemu</strong>, czyli <em>nie dużo = mało</em>.
-            </p>
-          </div>
-
-          <div class="rule-box">
-            <h3>3. Zasada liczb</h3>
-            <p>
-              Liczby zapisuje się w systemie dwójkowym, używając słów <strong>ne</strong> jako <strong>0</strong>
-              oraz <strong>si</strong> jako <strong>1</strong>.
-            </p>
-            <p>
-              Dzięki temu jedną liczbę zapisuje się jako ciąg bitów utworzonych z prostych znaków
-              <strong>ne</strong> i <strong>si</strong>.
-            </p>
+          <div class="word-cloud">
+            <div class="word-item">co</div>
+            <div class="word-item">do</div>
+            <div class="word-item">wi</div>
+            <div class="word-item">me</div>
+            <div class="word-item">te</div>
+            <div class="word-item">bo</div>
+            <div class="word-item">ke</div>
+            <div class="word-item">mu</div>
+            <div class="word-item">pe</div>
+            <div class="word-item">ne</div>
+            <div class="word-item">to</div>
+            <div class="word-item">si</div>
+            <div class="word-item">mi</div>
           </div>
         </div>
       </section>
 
-      <section id="przyklady-zdan" class="container section-block last-section">
-        <div class="section-header">
-          <p class="kicker">Przykłady zdań</p>
-          <h2>Proste konstrukcje Nemute</h2>
+      <section id="slownik" class="section-standard">
+        <div class="container">
+          <h2>Słownik</h2>
+          <p class="section-intro-text">13 słów, które tworzą fundament języka</p>
+          
+          <div class="dictionary-grid">
+            <div class="dict-entry">
+              <div class="word-key">co</div>
+              <div class="word-def">rzecz, coś, obiekt</div>
+            </div>
+            <div class="dict-entry">
+              <div class="word-key">do</div>
+              <div class="word-def">robić, zdarzenie, akcja</div>
+            </div>
+            <div class="dict-entry">
+              <div class="word-key">wi</div>
+              <div class="word-def">chcieć, pragnienie, wola</div>
+            </div>
+            <div class="dict-entry">
+              <div class="word-key">me</div>
+              <div class="word-def">umysł, świadomość, myśl</div>
+            </div>
+            <div class="dict-entry">
+              <div class="word-key">te</div>
+              <div class="word-def">znak, słowo, treść, komunikacja</div>
+            </div>
+            <div class="dict-entry">
+              <div class="word-key">bo</div>
+              <div class="word-def">dobro, wartość, pozytyw</div>
+            </div>
+            <div class="dict-entry">
+              <div class="word-key">ke</div>
+              <div class="word-def">pytanie, niewiadoma, nieznane</div>
+            </div>
+            <div class="dict-entry">
+              <div class="word-key">mu</div>
+              <div class="word-def">dużo, bardzo, wielki, ilość</div>
+            </div>
+            <div class="dict-entry">
+              <div class="word-key">pe</div>
+              <div class="word-def">w, wewnątrz, zawieranie, przestrzeń</div>
+            </div>
+            <div class="dict-entry">
+              <div class="word-key">ne</div>
+              <div class="word-def">nie, negacja, brak, zero</div>
+            </div>
+            <div class="dict-entry">
+              <div class="word-key">to</div>
+              <div class="word-def">do, kierunek, cel, ruch</div>
+            </div>
+            <div class="dict-entry">
+              <div class="word-key">si</div>
+              <div class="word-def">ten sam, identyczny, jedynka, prawda</div>
+            </div>
+            <div class="dict-entry">
+              <div class="word-key">mi</div>
+              <div class="word-def">tu, ja, bliskie mówiącemu, bliskość</div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="feature-grid">
-          <article class="card">
-            <h3>Podstawowe działania</h3>
-            <ul>
-              <li><strong>mi do</strong> — ja działam</li>
-              <li><strong>do bo</strong> — robić dobro</li>
-              <li><strong>co do</strong> — rzecz działa / zdarzenie</li>
-            </ul>
-          </article>
+      <section id="reguly" class="section-standard">
+        <div class="container">
+          <h2>Reguły</h2>
+          <p class="section-intro-text">Jak funkcjonuje Nemute</p>
 
-          <article class="card">
-            <h3>Wola i świadomość</h3>
-            <ul>
-              <li><strong>co wi</strong> — rzecz chce / pragnie</li>
-              <li><strong>me do</strong> — myślę / świadomość działa</li>
-              <li><strong>me te</strong> — świadomość treści / słowa</li>
-            </ul>
-          </article>
+          <div class="rules-list">
+            <div class="rule-item">
+              <h3>1. Łączenie słów</h3>
+              <p>
+                Gdy kilka słów tworzy spójną całość — nowe pojęcie — łączy się je 
+                w jedno słowo bez przerw.
+              </p>
+              <div class="rule-example">
+                <div class="formula">
+                  <span class="word-s">mu</span> + 
+                  <span class="word-s">co</span> + 
+                  <span class="word-s">me</span> = 
+                  <span class="result">mucome</span>
+                </div>
+                <p class="formula-meaning">
+                  <em>dużo rozumnych rzeczy</em> = ludzie = ludzkość
+                </p>
+              </div>
+            </div>
 
-          <article class="card">
-            <h3>Pytania i negacja</h3>
-            <ul>
-              <li><strong>ke do</strong> — co robić? / czy robić?</li>
-              <li><strong>ne do</strong> — nie robić</li>
-              <li><strong>ke co</strong> — co to jest?</li>
-            </ul>
-          </article>
+            <div class="rule-item">
+              <h3>2. Zaprzeczenie</h3>
+              <p>
+                Zaprzeczenie zawsze przyłącza się bezpośrednio do słowa, które się neguje.
+              </p>
+              <div class="rule-example">
+                <div class="formula">
+                  <span class="word-s">ne</span> + 
+                  <span class="word-s">mu</span> = 
+                  <span class="result">nemu</span>
+                </div>
+                <p class="formula-meaning">
+                  <em>nie dużo</em> = mało
+                </p>
+              </div>
+            </div>
 
-          <article class="card">
-            <h3>Wielkość i kierunek</h3>
-            <ul>
-              <li><strong>mu do</strong> — wielka akcja</li>
-              <li><strong>to mi</strong> — kierunek do mnie</li>
-              <li><strong>pe co</strong> — w rzecz / wewnątrz czegoś</li>
-            </ul>
-          </article>
+            <div class="rule-item">
+              <h3>3. System liczbowy</h3>
+              <p>
+                Liczby zapisuje się w systemie dwójkowym, gdzie <strong>ne = 0</strong> 
+                i <strong>si = 1</strong>. Umożliwia to prosty zapis ilości.
+              </p>
+              <div class="rule-example">
+                <p>Przykład: liczba 5 (binarne 101) zapisuje się jako <strong>sineesi</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="przyklady" class="section-standard">
+        <div class="container">
+          <h2>Przykłady</h2>
+          <p class="section-intro-text">Złożone konstrukcje w Nemute</p>
+
+          <div class="examples-grid">
+            <div class="example-block">
+              <h3>Eksploracja i nieznane</h3>
+              <div class="example-item">
+                <code>keco</code>
+                <p>jaki byt? / czym jest rzecz? / odkrywanie natury czegoś</p>
+              </div>
+              <div class="example-item">
+                <code>mute</code>
+                <p>wielka komunikacja / oświecenie / ścieżka zrozumienia</p>
+              </div>
+            </div>
+
+            <div class="example-block">
+              <h3>Wartość i moralność</h3>
+              <div class="example-item">
+                <code>bome</code>
+                <p>dobra świadomość / etyka / wiedza o dobru</p>
+              </div>
+              <div class="example-item">
+                <code>nebo</code>
+                <p>brak dobra / zło / szkoda</p>
+              </div>
+            </div>
+
+            <div class="example-block">
+              <h3>Działanie i cel</h3>
+              <div class="example-item">
+                <code>domi</code>
+                <p>działanie wobec mnie / zbliżanie się / zainteresowanie</p>
+              </div>
+              <div class="example-item">
+                <code>tobe</code>
+                <p>dążenie do dobra / cel moralny / aspiracja</p>
+              </div>
+            </div>
+
+            <div class="example-block">
+              <h3>Istnienie i relacje</h3>
+              <div class="example-item">
+                <code>pemi</code>
+                <p>zawieranie się we mnie / posiadanie / bliskość</p>
+              </div>
+              <div class="example-item">
+                <code>cotet</code>
+                <p>rzecz wypowiadana / symbolicznie wyrażony byt / słowo jako rzecz</p>
+              </div>
+            </div>
+
+            <div class="example-block">
+              <h3>Ilość i negacja</h3>
+              <div class="example-item">
+                <code>mubo</code>
+                <p>wiele dobra / bogactwo duchowe / obfitość wartości</p>
+              </div>
+              <div class="example-item">
+                <code>nemete</code>
+                <p>brak słów / milczenie / niemożliwość wyrażenia</p>
+              </div>
+            </div>
+
+            <div class="example-block">
+              <h3>Pragnienie i wola</h3>
+              <div class="example-item">
+                <code>wimu</code>
+                <p>pragnąć wiele / wielkie pragnienie / ambicja</p>
+              </div>
+              <div class="example-item">
+                <code>witobo</code>
+                <p>chcieć dążyć do dobra / moralny wybór / dobre zamiary</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <span>Nemute</span>
-        <span>Stworzony przez Igoe0309</span>
+    <footer class="footer">
+      <div class="container">
+        <p>Nemute — język stworzony przez Igoe0309</p>
       </div>
     </footer>
   </body>
